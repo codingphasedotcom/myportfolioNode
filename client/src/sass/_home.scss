@@ -1,0 +1,42 @@
+.content-area {
+  .topHeader {
+    display: flex;
+    height: calc(100vh - 49px);
+
+    .topLeft {
+      background: $topLeftBG;
+      display: inline-block;
+      width: 50%;
+      min-height: 500px;
+      height: 100%;
+      vertical-align: top;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-family: $displayFont;
+        font-size: 3rem;
+        color: white;
+      }
+    }
+
+    .topRight {
+      display: inline-block;
+      background: $topRightBG;
+      width: 50%;
+      min-height: 500px;
+      height: 100%;
+      vertical-align: top;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      img {
+        width: 100%;
+        max-width: 473px;
+      }
+    }
+  }
+}

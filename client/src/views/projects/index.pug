@@ -1,0 +1,25 @@
+extends ../layouts/main.pug
+block title
+  title Projects
+
+block content
+  div(class="container projects-page index-page")
+    h1 Show All Projects
+    
+    div(class="row")
+      each project in projects
+        div(class="col-md-4")
+          div(class="content-box")
+            div(class="project-img", style="background: url(" + project.img + ") no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; width: 100%; min-height: 300px;")
+              div(class="inside")
+                a(href="/projects/" + project.slug )
+                  div
+                    h4= project.title
+                    
+                    div(class="tags")
+                      each tag in project.tags
+                        div(class="pill") ##{tag}
+            
+    
+        
+          

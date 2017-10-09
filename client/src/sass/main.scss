@@ -1,0 +1,75 @@
+@import "reset";
+@import "variables";
+@import "grid";
+@import "global";
+/*
+Pages
+*/
+@import "home";
+@import "about";
+/*
+Projects
+*/
+@import "projects/index";
+@import "projects/show";
+/*
+blog
+*/
+@import "blog/index";
+@import "blog/show";
+
+* {
+  font-family: $mainFont;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bodyBG;
+}
+
+header {
+  background: $headerBG;
+  overflow: auto;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+
+  .logo {
+    display: inline-block;
+    font-family: $displayFont;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    display: inline-block;
+    float: right;
+
+    ul {
+      li {
+        padding: 0 10px;
+        display: inline-block;
+
+        a {
+          font-family: $mainFont;
+          font-weight: 300;
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  font-family: $displayFont;
+  display: block;
+  flex-direction: column;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.content-area {
+  padding-top: 49px;
+}

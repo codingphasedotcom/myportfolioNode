@@ -1,0 +1,15 @@
+@import url( 'https://fonts.googleapis.com/css?family=Poiret+One|Roboto+Condensed:300,400,700');
+$headerBG: #716EFF;
+$topLeftBG: #5157D0;
+$topRightBG: #222564;
+$bodyBG: #F0F6FF;
+$shadowColor: #E2DEFF;
+$linkHoverColor: red;
+$mainFont: 'Roboto Condensed', sans-serif;
+$displayFont: 'Poiret One', cursive; // Grid System
+$grid-columns: 12;
+$grid-max-width: 1200px; //breakpoint-small
+$breakpoint-small: "only screen and (min-width: 0px)";
+$breakpoint-medium: "only screen and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 1008px)";
+$breakpoint-xl: "only screen and (min-width: 1300px)";
