@@ -46,9 +46,11 @@ projectsController.index = (req, res) => {
     img: 'https://cdn.dribbble.com/users/207046/screenshots/3796280/d_1.jpg'
   }
 ]
+  var testingVar = process.env.DB_USERNAME
 
   res.render('projects/index', {
-    projects: projects
+    projects: projects,
+    testingVar: testingVar
   })
 }
 
